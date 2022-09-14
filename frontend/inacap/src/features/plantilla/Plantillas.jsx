@@ -12,6 +12,7 @@ import {
   import { Layout, Menu } from 'antd';
   import React, { useState } from 'react';
 import Producto from '../producto/Producto';
+import Productolist from '../producto/Productolist';
 
   const { Header, Sider, Content } = Layout;
   
@@ -64,7 +65,7 @@ import Producto from '../producto/Producto';
               minHeight: 280,
             }}
           >
-            <Producto/>
+            <Productolist/>
           </Content>
         </Layout>
       </Layout>
