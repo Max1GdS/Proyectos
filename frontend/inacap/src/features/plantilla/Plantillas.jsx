@@ -11,10 +11,11 @@ import {
   } from '@ant-design/icons';
   import { Layout, Menu } from 'antd';
   import React, { useState } from 'react';
+import Producto from '../producto/Producto';
 
   const { Header, Sider, Content } = Layout;
   
-  const Plantilla = () => {
+  const Plantillas = () => {
     const [collapsed, setCollapsed] = useState(false);
     return (
       <Layout>
@@ -63,11 +64,12 @@ import {
               minHeight: 280,
             }}
           >
-            <Tabla/>
+            <Producto/>
           </Content>
         </Layout>
       </Layout>
     );
   };
   
-  export default Plantilla;
+  export default Plantillas;
+  
