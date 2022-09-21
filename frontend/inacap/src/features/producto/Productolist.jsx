@@ -1,16 +1,17 @@
 import React from 'react'
 import Producto from './Producto'
 import { Row, Col } from 'antd'
+import './ProductoList.css'
 
 const Productolist = () => {
   return (
-    <Row>
+    <Row gutter={16}>
       {Array.from(
           { 
-            length: 100 ,
+            length: 100,
           },
           (_, index) => (
-            <Col>
+            <Col className="gutter-box">
              <Producto />
             </Col>
           )
